@@ -1,1 +1,40 @@
-<p>landing-page works!</p>
+<div style="font-family: 'Crimson Text', serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Source Code Pro', monospace;">
+  <br>
+  <br>
+  <div class="row" *ngFor="let user of users">
+    <div class="col-md-5 pt-5">
+      <div class="card">
+        <div class="card-body">
+          <div class="container contents">
+            <div>
+              <img src="{{user.avatar_url}}" class="card-img rounded-circle ">
+              <h1 class="text-info" style="padding:25px">{{user.name}}</h1>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 pt-5">
+      <div class="card">
+        <div class="card-body">
+          <div class="card profile">
+            <div class="card-header">
+              <h1 class="text-info" style="padding:20px">{{user.name}}</h1>
+              <p><strong>login:</strong> {{user.login}}</p>
+              <p><strong>Created at:</strong> {{user.created_at|date}} </p>
+              <p><strong>Repositories:</strong> {{user.public_repos}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
