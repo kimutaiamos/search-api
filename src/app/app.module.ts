@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -19,16 +18,17 @@ import { HttpClientModule } from '@angular/common/http';
     NotFoundComponent,
     ProfileComponent,
     DateCountPipe,
-    HighlightDirective,
-    HttpClientModule,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    HttpClient
+    HttpClient,
+    HttpClientModule
+    
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }
