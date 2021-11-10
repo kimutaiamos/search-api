@@ -8,7 +8,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
 import { DateCountPipe } from './date-count.pipe';
 import { HighlightDirective } from './highlight.directive';
-import { HttpClient } from '@angular/common/http';
+//import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
@@ -23,11 +23,11 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClient,
+  //  HttpClient,
     HttpClientModule
     
   ],
-  providers: [HttpClientModule],
+  providers: [],
   bootstrap: [AppComponent]
   
 })
